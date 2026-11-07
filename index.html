@@ -3,7 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>NADEL — Maison de Parfum</title>
+<title>NADEL — Luxury Perfumes & Signature Fragrances</title>
+<meta name="description" content="Discover NADEL, a modern fragrance house creating distinctive perfumes with memorable character. Explore signature scents for men and women and curated gift collections.">
+<meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="googlebot" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+<meta name="theme-color" content="#f7f2ea">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="NADEL">
+<meta property="og:title" content="NADEL — Luxury Perfumes & Signature Fragrances">
+<meta property="og:description" content="Discover distinctive signature fragrances for men and women, crafted to leave a lasting impression.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=85">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NADEL — Luxury Perfumes & Signature Fragrances">
+<meta name="twitter:description" content="Discover distinctive signature fragrances for men and women, crafted to leave a lasting impression.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=1200&q=85">
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Brand",
+  "name":"NADEL",
+  "description":"A modern fragrance house creating distinctive signature perfumes for men and women."
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,700&family=Jost:wght@400;500;600;700&family=Cinzel:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -470,6 +491,11 @@ body.reviews-open .reviews-page{opacity:1;visibility:visible}
 .footer-bottom .legal{display:flex;gap:24px;flex-wrap:wrap}
 .footer-bottom a:hover{color:var(--cream)}
 
+.footer-credit{margin-top:14px;color:rgba(247,242,234,.58);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;line-height:1.9}
+.footer-credit a{color:var(--gold);font-weight:800;text-decoration:none;transition:color .25s ease}
+.footer-credit a:hover{color:var(--cream);text-decoration:underline;text-underline-offset:4px}
+
+
 .cookie{position:fixed;left:clamp(16px,2.5vw,28px);bottom:clamp(16px,2.5vw,28px);z-index:500;width:min(380px, calc(100vw - 32px));background:rgba(13,12,11,.96);backdrop-filter:blur(24px) saturate(140%);-webkit-backdrop-filter:blur(24px) saturate(140%);border:1px solid rgba(198,161,91,.28);border-radius:16px;padding:clamp(22px,3vw,30px);color:var(--cream);box-shadow:0 20px 60px rgba(0,0,0,.35);opacity:0;transform:translateY(30px);visibility:hidden;transition:opacity .7s var(--ease), transform .7s var(--ease), visibility .7s}
 .cookie.show{opacity:1;transform:none;visibility:visible}
 .cookie-mark{font-family:var(--brand);font-size:11px;font-weight:800;letter-spacing:.5em;padding-left:.5em;color:var(--gold);margin-bottom:14px}
@@ -886,6 +912,31 @@ img{max-width:100%}
 .footer-page-copy a{color:#96713d;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:600px){.footer{padding-left:20px;padding-right:20px}.footer-page-dialog{padding:30px 22px}.footer-bottom{font-size:.6rem;letter-spacing:.12em}}
 
+
+/* NADEL FINAL EDIT — refined collection feature */
+.sculpt-stage{
+  isolation:isolate;min-height:clamp(250px,34vw,390px);height:auto;max-width:1100px;
+  margin:0 auto 34px;border:1px solid rgba(255,255,255,.58);border-radius:22px;
+  overflow:hidden;position:relative;
+  background:radial-gradient(ellipse at 50% 42%,rgba(255,255,255,.96) 0%,rgba(235,226,210,.9) 35%,rgba(190,169,139,.95) 100%);
+  box-shadow:0 24px 70px rgba(62,48,29,.14),inset 0 1px 0 rgba(255,255,255,.8);
+  transition:box-shadow .7s var(--ease),transform .7s var(--ease);
+}
+.sculpt-stage::before,.sculpt-stage::after{content:"";position:absolute;z-index:1;pointer-events:none;border:1px solid rgba(150,119,73,.28);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
+.sculpt-stage::before{width:clamp(230px,38vw,430px);aspect-ratio:1;box-shadow:0 0 0 18px rgba(255,255,255,.10),0 0 0 38px rgba(255,255,255,.07)}
+.sculpt-stage::after{width:clamp(290px,48vw,540px);aspect-ratio:1;border-style:dashed;border-color:rgba(150,119,73,.2);animation:sculptOrbit 38s linear infinite}
+.sculpt-stage:hover{transform:translateY(-4px);box-shadow:0 32px 85px rgba(62,48,29,.2),inset 0 1px 0 rgba(255,255,255,.9)}
+.sculpt-img{width:clamp(112px,17vw,190px);height:clamp(168px,25vw,270px);object-fit:contain;z-index:2;transform:rotate(-7deg) translateY(-5px);filter:drop-shadow(0 22px 18px rgba(54,39,22,.22));box-shadow:none!important;transition:transform .9s var(--ease),filter .9s var(--ease)}
+.sculpt-stage:hover .sculpt-img{transform:rotate(-2deg) translateY(-12px) scale(1.045);filter:drop-shadow(0 30px 24px rgba(54,39,22,.28))}
+.sculpt-stage-title{bottom:20px;z-index:3;color:#66533a;font-size:10px;letter-spacing:.48em;opacity:.82}
+@keyframes sculptOrbit{to{transform:translate(-50%,-50%) rotate(360deg)}}
+
+/* Product name is the only heading in the product details area */
+.pp-header-row{display:none!important}
+.pp-name{font-family:var(--serif);font-size:clamp(2rem,5vw,3.25rem);font-weight:600;letter-spacing:.015em;text-transform:none;line-height:1.08;margin:0 0 18px;color:var(--ink)}
+@media(max-width:600px){.sculpt-stage{min-height:250px;border-radius:16px;margin-bottom:26px}.sculpt-stage-title{font-size:9px;letter-spacing:.34em}.pp-name{font-size:clamp(1.8rem,8vw,2.5rem)}}
+@media(prefers-reduced-motion:reduce){.sculpt-stage::after{animation:none}}
+
 </style>
 </head>
 <body>
@@ -1016,7 +1067,8 @@ img{max-width:100%}
     <a href="#" aria-label="X (Twitter)" title="X (Twitter)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3L12 14.6 5.5 22H2.3l7.3-8.4L1.8 2h6.5l4.5 6.7zM17.8 20h1.7L7.2 3.9H5.4z" fill="currentColor" stroke="none"/></svg></a>
   </div>
   <div class="footer-bottom">
-    <div>©</div>
+    <div>© 2026 NADEL · All Rights Reserved</div>
+    <div class="footer-credit">Developed by <a href="https://www.facebook.com/share/1FwgoTRtX8/" target="_blank" rel="noopener noreferrer" aria-label="Ahmed on Facebook">Ahmed</a></div>
     <div class="legal"><a href="#" data-footer-page="privacy">Privacy Policy</a><a href="#" data-footer-page="terms">Terms</a><a href="#" data-footer-page="cookies">Cookies</a></div>
   </div>
 </footer>
@@ -1256,6 +1308,7 @@ img{max-width:100%}
   </div>
   <div class="footer-bottom">
     <div>© 2026 NADEL · All Rights Reserved</div>
+    <div class="footer-credit">Developed by <a href="https://www.facebook.com/share/1FwgoTRtX8/" target="_blank" rel="noopener noreferrer" aria-label="Ahmed on Facebook">Ahmed</a></div>
     <div class="legal"><a href="#" data-footer-page="privacy">Privacy Policy</a><a href="#" data-footer-page="terms">Terms</a><a href="#" data-footer-page="cookies">Cookies</a></div>
   </div>
 </footer>
@@ -1868,7 +1921,7 @@ async function openCategories(slug) {
   const { cat, products } = await loadCategoryProducts(slug);
   if (!cat) { catSubHead.innerHTML = '<div class="cat-empty">Category not found</div>'; return; }
   products.forEach(p => { if (!PRODUCTS.find(x => x.id === p.id)) PRODUCTS.push(p); });
-  catSubHead.innerHTML = `<p class="section-eyebrow" style="text-align:center;margin-bottom:14px">THE COLLECTION</p><h2 class="cat-sub-title">${cat.name}</h2>`;
+  catSubHead.innerHTML = '';
   if (!products.length) { catGrid.innerHTML = '<div class="cat-empty">No products yet — coming soon.</div>'; return; }
   catGrid.innerHTML = products.map(renderProductCard).join("");
   attachCardHandlers(catGrid);
